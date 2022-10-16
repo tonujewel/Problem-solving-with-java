@@ -2,7 +2,7 @@
 /**
  * minimum_value
  */
-public class minimum_value {
+public class MinimumValue {
 
     public static void main(String[] args) {
         int[] myNum = { 21, 6, 8, 20, 999 };
