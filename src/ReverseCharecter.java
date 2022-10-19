@@ -1,12 +1,12 @@
+
 public class ReverseCharecter {
   public static void main(String[] args) {
-    String sentence = "I love programming";
+    String sentence = "i love programming";
+    System.out.println(rev(sentence));
 
-  String val =   reverChar(sentence);
-  System.out.println(val);
   }
 
-  static String reverChar(String character) {
+  static String reverseCharSpliString(String character) {
 
     String[] newData = character.split(" ");
     String result = "";
@@ -20,6 +20,36 @@ public class ReverseCharecter {
     }
 
     return result;
+
+  }
+
+  static String reverseChar(String character) {
+
+
+    character = character + " ";
+
+    String word = "";
+
+    int startPoint = -1;
+    int endPoint = 0;
+
+    for (int i = 0; i < character.length(); i++) {
+
+      String a = character.charAt(i) + "";
+      if (a.equalsIgnoreCase(" ")) {
+
+        endPoint = i;
+        for (int j = endPoint; j > startPoint; j--) {
+          word = word + character.charAt(j);
+        }
+
+        startPoint = i;
+
+      }
+
+    }
+
+    return word.trim(); // trim for remove space
 
   }
 }
