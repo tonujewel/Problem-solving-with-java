@@ -2,7 +2,7 @@
 public class ReverseCharecter {
   public static void main(String[] args) {
     String sentence = "i love programming";
-    System.out.println(rev(sentence));
+    System.out.println(reverseChar(sentence));
 
   }
 
