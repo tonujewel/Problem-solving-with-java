@@ -1,30 +1,11 @@
 public class MainClass {
-    public static void main(String[] args) {
-     ReverseString.solve("qxkpvo  f   w vdg t wqxy ln mbqmtwwbaegx   mskgtlenfnipsl bddjk znhksoewu zwh bd fqecoskmo"); 
-    //  removeExtraSpace("qxkpvo  f   w vdg t wqxy ln mbqmtwwbaegx   mskgtlenfnipsl bddjk znhksoewu zwh bd fqecoskmo"); 
-    }
+  public static void main(String[] args) {
 
-    // static void removeExtraSpace(String A){
+    int[] nums = { 3,2,3};
 
-    //   for (int i = 0; i < A.length()-1; i++) {
-
-    //     String ch = A.charAt(i) + "";
-    //     String cha = A.charAt(i+1) + "";
-
-    //     if (ch.equalsIgnoreCase(cha)) {
-
-    //       A.
-
-    //       System.out.println(i);
-          
-    //     }
-
-    //   }
-
-    // //  System.out.println();
-
-
-    // }
-
+   TwoSum.twoSum(nums, 6);
+    
 
   }
+
+}
