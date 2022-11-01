@@ -1,4 +1,3 @@
-import java.util.HashMap;
 
 public class HashMapExample {
     public static void main(String[] args) {
@@ -18,7 +17,7 @@ public class HashMapExample {
 
     public static int[] twoSum(int[] numbers, int target) {
 
-        HashMap<Integer, Integer> data = new HashMap<Integer, Integer>();
+        // HashMap<Integer, Integer> data = new HashMap<Integer, Integer>();
 
         for (int i = 0,j=numbers.length-1; i < numbers.length/2; i++,j--) {
 
