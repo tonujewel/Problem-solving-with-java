@@ -78,22 +78,30 @@ public class TwoSumTwo {
 
         for (p1 = 0; p1 < numbers.length;) {
 
-            int sum = numbers[p1] + numbers[p2];            
-        
-              if (sum == target) {
+            int res = numbers[p1] + numbers[p2];
+
+            // System.out.println("summation "+res+"target "+target);
+
+            if (res == target) {
+                // System.out.println("result : ");
                 result[0] = p1 + 1;
                 result[1] = p2 + 1;
+
                 break;
             }
-            if (sum > target) {
+
+            if (res > target) {
                 p2--;
-            } else{
+                // System.out.println("p2");
+            } else {
                 p1++;
+                // System.out.println("p1");
             }
 
         }
 
-   
+        System.out.println(result[0]);
+        System.out.println(result[1]);
 
         return result;
 
